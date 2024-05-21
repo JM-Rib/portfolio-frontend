@@ -1,0 +1,62 @@
+.label-warning.erreur{
+  font-family: DMSans;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: #8a8a8a 2px 2px 3px ;
+  padding: 10px;
+
+  
+  box-shadow: 0 1px 3px rgb(255 40 40/50%), 0 1px 2px rgb(0 0 0/24%) !important;
+  border: 1px solid #eee !important;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-radius: 12px 12px 0 0;
+  border-radius: 12px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0.001%,
+    rgba(255, 30, 30, 0.50) 7%,
+    rgba(255, 30, 30, 0.80) 90%
+  ) !important;
+
+  box-shadow: 0 1px 5px 1px rgb(41 41 41 / 45%),
+    0 0.33em 0.725em -0.455em rgb(0 0 0 / 40%),
+    inset 0 0.0625em 0 rgb(255 255 255 / 50%),
+    inset 0 -0.125em 0.0625em rgb(0 0 0 / 28%) !important;
+
+}
+
+.label-warning.succes{
+  font-family: DMSans;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: #8a8a8a 2px 2px 3px ;
+  padding: 10px;
+
+  transition: opacity 0.7s ease-in-out;
+  
+  box-shadow: 0 1px 3px rgb(30 230 30/50%), 0 1px 2px rgb(0 0 0/24%) !important;
+  border: 1px solid #eee !important;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-radius: 12px 12px 0 0;
+  border-radius: 12px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0.001%,
+    rgba(30, 255, 30, 0.50) 7%,
+    rgba(30, 230, 30, 0.8) 90%
+  ) !important;
+
+  box-shadow: 0 1px 5px 1px rgb(41 41 41 / 45%),
+    0 0.33em 0.725em -0.455em rgb(0 0 0 / 40%),
+    inset 0 0.0625em 0 rgb(255 255 255 / 50%),
+    inset 0 -0.125em 0.0625em rgb(0 0 0 / 28%) !important;
+
+}
+
+.espaceAlerte {
+  transition: opacity 0.7s ease-in-out;
+}

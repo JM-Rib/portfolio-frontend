@@ -1,0 +1,59 @@
+.EspaceGestion {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.EspaceGestion table{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+} 
+.EspaceGestion .tl-th{
+  border-top-left-radius: 12px;
+} 
+.EspaceGestion .tr-th{
+  border-top-right-radius: 12px;
+} 
+
+.EspaceGestion .td-visible, .EspaceGestion .th-visible {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.EspaceGestion .tr-visible{
+  width: 100%;
+}
+.EspaceGestion .membres-form-text{
+  width: 80%;
+}
+.EspaceGestion .membres-form-age{
+  width: 40px;
+}
+  
+.EspaceGestion .tr-visible:nth-child(even) .td-visible{background-color: #f2f2f2;}
+
+.EspaceGestion .tr-visible:hover .td-visible{background-color: #ddd;}
+
+.EspaceGestion .gestion-delete-icon {
+    height: 30px;
+}
+
+.tabgestion {
+    height: 65px;
+}
+.gestion-form-annuler{
+    margin-left: 15px;
+}
+
+.EspaceGestion .th-visible {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
