@@ -4,7 +4,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-import Accueil from "./pages/Accueil"
+import Gestion from "./pages/Gestion"
 import FormulaireLogin from "./components/FormulaireLogin";
 import { AuthProvider } from "./providers/AuthProvider";
 import ScrollToTop from "./utils/ScrollToTop";
@@ -26,6 +26,7 @@ import GestionCollab from "./components/GestionCollab"
 import GestionDescription from "./components/GestionDescription"
 import GestionContenutheme from "./components/GestionContenutheme"
 import GestionNomarticle from "./components/GestionNomarticle"
+import Accueil from './pages/Accueil';
 
 function App() {
 
@@ -49,6 +50,7 @@ function App() {
           <AuthProvider>
             <Routes>
                 <Route path="/" element={<Accueil />}/>
+                <Route path="/gestion" element={<Gestion />}/>
                 <Route path={APP_ROUTES.LOGIN} element={<FormulaireLogin />}/>
                 <Route element={<RequireAuth />}>  
                   <Route path={APP_ROUTES.PROFIL} element={<GestionProfil />}/>

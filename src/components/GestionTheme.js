@@ -81,7 +81,7 @@ function GestionThemes(props) {
 	return (
     <div className="EspaceGestion">
       {/* <div className="EspaceThemes"> */}
-      <Bouton  nom="Accueil" type="lien" lien={"/index"}  />
+      <Bouton  nom="Gestion" type="lien" lien={"/index"}  />
       <br />
       <br />
       <form onSubmit={handleSubmit}>

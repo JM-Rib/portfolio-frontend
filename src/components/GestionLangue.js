@@ -82,7 +82,7 @@ function GestionLangues(props) {
 	return (
     <div className="EspaceGestion">
       {/* <div className="EspaceLangues"> */}
-      <Bouton  nom="Accueil" type="lien" lien={"/index"}  />
+      <Bouton  nom="Gestion" type="lien" lien={"/index"}  />
       <br />
       <br />
       <form onSubmit={handleSubmit}>

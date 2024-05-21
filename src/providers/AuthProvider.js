@@ -44,7 +44,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   /**
-   * Déconnecte l'utilisateur et le redirige à la page d'accueil.
+   * Déconnecte l'utilisateur et le redirige à la page d'Gestion.
    */
   const logout = () => {
     setUser(null);
