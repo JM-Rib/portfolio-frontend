@@ -6,16 +6,10 @@ function CardProjet(props) {
   return (
     <div>
       <Card direction={{ base: 'column', sm: 'row' }} overflow='hidden' variant='outline'>
-      <Image
-        objectFit='cover'
-        maxW={{ base: '100%', sm: '200px' }}
-        src='./photo.png'
-        alt='Caffe Latte'
-      />
-      <Stack>
-        <CardBody>
-          <Heading size='md'>{props.title}</Heading>
-          <Text py='2'>
+      <Stack zIndex="999">
+        <CardBody >
+          <Heading size='md' color="white">{props.title}</Heading>
+          <Text py='2' color="white">
             {props.description}
           </Text>
         </CardBody>
@@ -25,6 +19,16 @@ function CardProjet(props) {
           </Button>
         </CardFooter>
       </Stack>
+      <Image
+        // objectPosition={"100px 100px"}
+        boxSize={"100%"}
+        objectFit={"cover"}
+        pos="absolute"
+        src='./cardcover.png'
+        alt={props.title}
+        filter="auto"
+        blur="4px"
+      />
       </Card> 
     </div>
   );

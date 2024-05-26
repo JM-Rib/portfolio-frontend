@@ -50,8 +50,8 @@ function ProjetCards(props) {
         gap={4}
       > 
       {getProjetsApi.data?.map((projet, n) => (
-        <GridItem rowSpan={2} colSpan={1} bg='tomato'>
-          <CardProjet key={n} title={projet.nomprojet} description={projet.description} />
+        <GridItem key={n} rowSpan={2} colSpan={1} bg='tomato'>
+          <CardProjet  title={projet.nomprojet} description={projet.description} />
         </GridItem>
       ))}
       </Grid>
