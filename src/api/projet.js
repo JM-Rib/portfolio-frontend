@@ -1,7 +1,7 @@
 import client from "./client";
 import { API_ROUTES } from '../utils/constants';
 
-const getProjets = () => client.get(API_ROUTES.PROJET);
+const getProjets = () => client.get(`${API_ROUTES.PROJET}/all&lang=1`);
 const getProjet = (id) => client.get(`${API_ROUTES.PROJET}/${id}`);
 const postProjet = (data) => client.post(API_ROUTES.PROJET, data);
 const putProjet = (id, data) => client.put(`${API_ROUTES.PROJET}/${id}`, data);
