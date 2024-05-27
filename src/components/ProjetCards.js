@@ -42,17 +42,16 @@ function ProjetCards(props) {
       {/* <div className="EspaceProjets"> */}
       <br />
       <br />
-      <Container maxW='2xl' bg='gray.50' centerContent>
+      <Container maxW='2xl'  bg='gray.50' >
       <Grid
-        h='200px'
-        templateRows='repeat(2, 1fr)'
-        templateColumns='repeat(5, 1fr)'
+        templateColumns='repeat(2, 1fr)'
         gap={4}
+        centercontent="true"
       > 
       {getProjetsApi.data?.map((projet, n) => (
-        <GridItem key={n} rowSpan={2} colSpan={1} bg='tomato'>
-          <CardProjet  title={projet.nomprojet} description={projet.description} />
-        </GridItem>
+          <GridItem maxH='md' key={n} rowSpan={2} colSpan={1} >
+            <CardProjet  title={projet.nomprojet} description={projet.description} themes={projet.themes} />
+          </GridItem>
       ))}
       </Grid>
       </Container>
