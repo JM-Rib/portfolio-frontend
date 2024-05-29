@@ -42,11 +42,13 @@ function ProjetCards(props) {
       {/* <div className="EspaceProjets"> */}
       <br />
       <br />
-      <Container maxW='2xl'  bg='gray.50' >
+      <Container maxW='2xl' bg='alpha' >
       <Grid
-        templateColumns='repeat(2, 1fr)'
-        gap={4}
-        centercontent="true"
+        templateColumns={{ base: '1fr', sm: '1fr 1fr', md: '1fr 1fr', lg: '1fr 1fr' }}
+        columnGap={[4,8,10]}
+        rowGap={[4,6,8]}
+        justifyContent="center"
+        alignItems="start"
       > 
       {getProjetsApi.data?.map((projet, n) => (
           <GridItem maxH='md' key={n} rowSpan={2} colSpan={1} >
