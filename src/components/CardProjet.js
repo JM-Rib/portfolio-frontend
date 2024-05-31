@@ -10,7 +10,7 @@ function CardProjet(props) {
         transform: 'scale(1.05)',
         transition: 'transform 0.6s ease-in-out',
         boxShadow: '0 0 15px 6px rgba(255, 20, 255, 0.4)',
-        transition: 'box-shadow 0.3s ease-in-out',
+        transition: 'box-shadow 0.1s ease-in-out',
       }}
     >
       <Card direction={{ base: 'column', sm: 'row' }} overflow='hidden' variant='outline'>

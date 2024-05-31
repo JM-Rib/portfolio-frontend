@@ -23,7 +23,7 @@ function LargeEmoji() {
   }, [window.scrollY]);
 
   return (
-    <Canvas style={{ display: 'inline-block', verticalAlign: 'middle', width: 'sm', height: 'sm', marginRight: 'md' }}>
+    <Canvas style={{ display: 'inline-block', verticalAlign: 'middle', width: '150px', height: 'sm', marginRight: 'md' }}>
       <ambientLight intensity={0.5} />
       <pointLight position={[1.3, 1.3, 1.3]} intensity={9} />
       <primitive object={gltf.scene} scale={[2.7, 2.8, 2.3]} rotation={[scrollAcceleration * 0.009, 0, 0]} />

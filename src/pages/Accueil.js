@@ -38,17 +38,6 @@ function Accueil() {
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <p>Salut <TextEmoji /></p>      
       <ProjetCards />
       {hasLoginData() ?
