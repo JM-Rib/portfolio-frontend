@@ -1,6 +1,7 @@
 import React from 'react';
 import Bouton from '../components/Bouton';
 import ProjetCards from '../components/ProjetCards';
+import EmojiComponent from '../components/Emoji';
 import { useAuth } from '../providers/AuthProvider';
 import { APP_ROUTES } from '../utils/constants';
 
@@ -9,7 +10,16 @@ function Accueil() {
 
 	return (
     <div className="accueil">
-      <p>Salut</p>      
+      <p>Salut <EmojiComponent /></p>      
+      <ProjetCards />
+      <ProjetCards />
+      <ProjetCards />
+      <ProjetCards />
+      <ProjetCards />
+      <ProjetCards />
+      <ProjetCards />
+      <ProjetCards />
+      <ProjetCards />
       <ProjetCards />
       {hasLoginData() ?
         <Bouton nom="Déconnexion" type="onClick" callback={logout} ></Bouton>

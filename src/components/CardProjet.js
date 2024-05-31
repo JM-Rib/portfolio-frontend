@@ -27,7 +27,7 @@ function CardProjet(props) {
             <Wrap spacing={1} rowGap={2}>
               {props.themes.map((theme, n) => (
                 <WrapItem key={n}>
-                  <Tag colorScheme='orange'>
+                  <Tag colorScheme='purple'>
                     {theme}
                   </Tag>
                 </WrapItem>
