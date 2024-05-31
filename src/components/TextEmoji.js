@@ -5,7 +5,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { useLoader } from '@react-three/fiber';
 import { OrbitControls, Html } from '@react-three/drei';
 
-function Emoji() {
+function TextEmoji() {
   const gltf = useLoader(GLTFLoader, '/star.gltf');
 
   const [scrollAcceleration, setScrollAcceleration] = useState(0);
@@ -22,7 +22,7 @@ function Emoji() {
     requestRef.current = requestAnimationFrame(animate);
 
     return () => cancelAnimationFrame(requestRef.current);
-  }, [scrollAcceleration]);
+  }, [window.scrollY]);
 
   return (
     <Canvas style={{ display: 'inline-block', verticalAlign: 'middle', width: '1.5em', height: '1.5em', marginRight: '0.2em' }}>
@@ -33,4 +33,4 @@ function Emoji() {
   );
 }
 
-export default Emoji;
+export default TextEmoji;
