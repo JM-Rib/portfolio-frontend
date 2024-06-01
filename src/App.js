@@ -26,7 +26,7 @@ import GestionCollab from "./components/GestionCollab"
 import GestionDescription from "./components/GestionDescription"
 import GestionContenutheme from "./components/GestionContenutheme"
 import GestionNomarticle from "./components/GestionNomarticle"
-import NavBar from "./components/NavBar"
+import NavBar from "./components/Navbar/NavBar"
 import Accueil from './pages/Accueil';
 
 function App() {

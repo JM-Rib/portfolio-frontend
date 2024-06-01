@@ -26,8 +26,8 @@ function TextEmoji() {
 
   return (
     <Canvas style={{ display: 'inline-block', verticalAlign: 'middle', width: '1.5em', height: '1.5em', marginRight: '0.2em' }}>
-      <ambientLight />
-      <pointLight position={[10, 10, 10]} />
+      <ambientLight intensity={0.5} />
+      <pointLight position={[1.3, 1.3, 1.3]} intensity={9} />
       <primitive object={gltf.scene} scale={[2.8, 2.8, 2.8]} rotation={[scrollAcceleration * 0.009, 0, 0]} />
     </Canvas>
   );

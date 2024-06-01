@@ -22,7 +22,6 @@ function Accueil() {
           <Heading size='md' color="white" textAlign="left">You made it to my site !</Heading>
         </Stack>
         <PartyPopper />
-        <LargeEmoji />
       </Container>
       <br />
       <br />
