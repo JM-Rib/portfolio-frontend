@@ -26,6 +26,7 @@ import GestionCollab from "./components/GestionCollab"
 import GestionDescription from "./components/GestionDescription"
 import GestionContenutheme from "./components/GestionContenutheme"
 import GestionNomarticle from "./components/GestionNomarticle"
+import NavBar from "./components/NavBar"
 import Accueil from './pages/Accueil';
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
       <BrowserRouter>
           <ScrollToTop />
           <AuthProvider>
+            <NavBar />
             <Routes>
                 <Route path="/" element={<Accueil />}/>
                 <Route path="/gestion" element={<Gestion />}/>
