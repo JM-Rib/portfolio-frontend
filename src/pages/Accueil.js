@@ -6,37 +6,20 @@ import LargeEmoji from '../components/LargeEmoji';
 import PartyPopper from '../components/PartyPopper';
 import { useAuth } from '../providers/AuthProvider';
 import { APP_ROUTES } from '../utils/constants';
-import { Heading, Container, Stack } from '@chakra-ui/react';
+import { Box, Heading, Container, Stack } from '@chakra-ui/react';
 
 function Accueil() {
   const {logout, hasLoginData} = useAuth();
 
 	return (
     <div className="accueil">
-      <br />
-      <br />
-      <br />
-      <Container maxW='2xl' bg='alpha' display="flex" alignItems="center" justifyContent="center" >
-        <Stack>
-          <Heading size='md' color="white" textAlign="left">Congrats !</Heading>
-          <Heading size='md' color="white" textAlign="left">You made it to my site !</Heading>
-        </Stack>
+      <Box position="relative" width="100vw" height="100vh">
         <PartyPopper />
-      </Container>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+        <Box position="absolute" top="0" left="0" right="0" bottom="0" display="flex" flexDirection="column" alignItems="center" justifyContent="center" color="white" zIndex="10">
+          <Heading size='md' textAlign="center">Congrats!</Heading>
+          <Heading size='md' textAlign="center">You made it to my site!</Heading>
+        </Box>
+      </Box>
       <p>Salut <TextEmoji /></p>      
       <ProjetCards />
       {hasLoginData() ?
