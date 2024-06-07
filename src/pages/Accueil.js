@@ -16,11 +16,11 @@ function Accueil() {
       <Box position="relative" width="100vw" height="100vh">
         <PartyPopper />
         <Box position="absolute" top="0" left="0" right="0" bottom="0" display="flex" flexDirection="column" alignItems="center" justifyContent="center" color="white" zIndex="10">
-          <Heading size='md' textAlign="center">Congrats!</Heading>
-          <Heading size='md' textAlign="center">You made it to my site!</Heading>
+          <Heading size='md' fontFamily="title" fontSize="5xl" textAlign="center">Congrats!</Heading>
+          <Heading size='md' fontFamily="title" fontSize="5xl" textAlign="center">You made it to my site!</Heading>
         </Box>
       </Box>
-      <p>Salut <TextEmoji /></p>      
+      Salut <TextEmoji />      
       <ProjetCards />
       {hasLoginData() ?
         <Bouton nom="Déconnexion" type="onClick" callback={logout} ></Bouton>

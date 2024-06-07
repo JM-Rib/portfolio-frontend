@@ -1,9 +1,11 @@
-import { extendTheme } from '@chakra-ui/react'
+import { extendTheme, theme as base } from "@chakra-ui/react";
+
 
 const theme = extendTheme({
   fonts: {
-    heading: `'KumbhSans', sans-serif`,
     body: `'DMSans', sans-serif`,
+    heading: `'KumbhSans', sans-serif`,
+    title: `'Alata', monospace`,
   },
   config: {
     initialColorMode: "dark",
@@ -22,4 +24,4 @@ const theme = extendTheme({
   } 
 })
 
-export default theme
+export default theme;

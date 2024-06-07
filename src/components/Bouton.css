@@ -3,6 +3,16 @@
   src: local("DMSans"), url("../assets/DMSans-Regular.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "KumbhSans";   
+  src: local("KumbhSans"), url("../assets/KumbhSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Alata";   
+  src: local("Alata"), url("../assets/Alata-Regular.woff2") format("woff2");
+}
+
 @media (max-width: 380px) {
   .EspaceBouton .Bouton-NavLink {
     width: 150px;
