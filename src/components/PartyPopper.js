@@ -24,7 +24,7 @@ export default function PartyPopper() {
   }, [window.scrollY]);
 
   return (
-    <Canvas style={{ width: '100vw', height: '100vh' }}>
+    <Canvas style={{ width: '100vw', height: '100vh', left: '8%'}}>
       <ambientLight intensity={0.5} />
       <pointLight position={[1.3, 1.3, 1.3]} intensity={9} />
       <primitive object={party.scene} position={[-1, 0, -2]} scale={[2.7, 2.8, 2.3]} rotation={[scrollAcceleration * 0.009, 0, 0]} />
