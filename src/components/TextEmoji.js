@@ -47,6 +47,9 @@ function TextEmoji(props) {
       //use different lighting bc it doesnt look good with default
       setLightPos([-4.7, 2, 2.3]);
       setLightInt(50);
+    } else if(props.emoji === "red_heart"){
+      setLightPos([-4.7, 2.4, 2.3]);
+      setLightInt(50);
     }
   }, []);
 

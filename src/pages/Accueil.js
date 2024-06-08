@@ -20,13 +20,9 @@ function Accueil() {
           <Heading size='md' fontFamily="title" fontSize="7xl" textAlign="left">You made it to my site!</Heading>
         </Box>
       </Box>
-      <TextEmoji emoji="star" /> Made with love in Brest, France <TextEmoji emoji="flag_france" />      
       <ProjetCards />
-      {hasLoginData() ?
-        <Bouton nom="Déconnexion" type="onClick" callback={logout} ></Bouton>
-      :
-        <Bouton nom="Connexion" type="lien" lien={APP_ROUTES.LOGIN}  />
-      }
+      <br />
+      Made with <TextEmoji emoji="red_heart" />  in Brest, France <TextEmoji emoji="flag_france" />      
     </div>
     );
 }

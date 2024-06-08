@@ -12,7 +12,7 @@ export default function PartyPopper() {
   const [prevScrollY, setPrevScrollY] = useState(0);
   const requestRef = useRef();
 
-  const maxRotation = Math.PI / 8; // Maximum rotation in radians (45 degrees)
+  const maxRotation = Math.PI / 10; // Maximum rotation in radians (45 degrees)
   const decayFactor = 0.95; // Decay factor to gradually reset rotation
 
   // Function to clamp rotation within the specified maximum threshold
