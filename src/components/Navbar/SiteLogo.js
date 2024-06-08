@@ -4,8 +4,8 @@ import { Box, Text } from "@chakra-ui/react"
 export default function SiteLogo(props) {
   return (
     <Box {...props}>
-      <Text fontSize="lg" fontWeight="bold">
-        Logo
+      <Text fontSize="lg" fontWeight="bold" >
+        RIBARIC Jean-Marin
       </Text>
     </Box>
   )
