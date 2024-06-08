@@ -20,7 +20,7 @@ function Accueil() {
           <Heading size='md' fontFamily="title" fontSize="7xl" textAlign="left">You made it to my site!</Heading>
         </Box>
       </Box>
-      Salut <TextEmoji />      
+      <TextEmoji emoji="star" /> Made with love in Brest, France <TextEmoji emoji="flag_france" />      
       <ProjetCards />
       {hasLoginData() ?
         <Bouton nom="Déconnexion" type="onClick" callback={logout} ></Bouton>
