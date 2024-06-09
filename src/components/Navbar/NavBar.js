@@ -12,7 +12,6 @@ export default function NavBar (props) {
   return (
     <NavBarContainer {...props}>
       <SiteLogo
-        w="sm"
         color={["white", "white", "primary.500", "primary.500"]}
       />
       <MenuToggle toggle={toggle} isOpen={isOpen} />

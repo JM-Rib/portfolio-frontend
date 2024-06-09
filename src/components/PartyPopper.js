@@ -37,21 +37,21 @@ export default function PartyPopper() {
   }, [window.scrollY]);
 
   return (
-    <Box position="relative" width="100%" height="100vh" overflow="hidden">
-      <Canvas style={{ position: 'absolute', top: 0, left: "8%", width: '100%', height: '100%' }}>
+    <Box position="relative" width="100%" height="100%" overflow="hidden" bottom="8%">
+      <Canvas style={{ position: 'absolute', top: 0, left: "8%", width: '100%', height:"100%" }}>
         <ambientLight intensity={0.5} />
         <pointLight position={[1.3, 1.3, 1.3]} intensity={9} />
         <primitive
           object={party.scene}
           position={[-1, 0, -2]}
-          scale={[2.7, 2.8, 2.3]}
+          scale={[3, 3.1, 2.6]}
           rotation={[clampRotation(scrollAcceleration), 0, 0]} // Apply clamped rotation
         />
         <pointLight position={[-1, 1.3, -1]} intensity={4} />
         <primitive
           object={bottle.scene}
           position={[1, 0, 1]}
-          scale={[2, 2, 2]}
+          scale={[2.3, 2.3, 2.3]}
           rotation={[clampRotation(scrollAcceleration), 0, 0]} // Apply clamped rotation
         />
       </Canvas>
