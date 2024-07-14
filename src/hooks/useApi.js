@@ -33,12 +33,17 @@ export default (apiFunc) => {
     try {
       const response = apiFunc(...args);
       response.then( r => {
+        if(process.env.REACT_APP_DEBUG !== undefined){
+          console.log(r);
+        }
         if (r?.status === 200) {
           dispatch({ type: actionTypes.SET_DATA, payload: r.data });
-          console.log(r.data);
-        } else {
-          throw response;
-        }
+        } 
+      }).catch( (err) => {
+        if(process.env.REACT_APP_DEBUG !== undefined){
+          console.log(err);
+          console.log(err?.response.status);
+        } 
       });
       dispatch({ type: actionTypes.SET_DATA, payload: response.data });
       return response;
