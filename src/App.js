@@ -51,7 +51,7 @@ function App() {
           <AuthProvider>
             <NavBar />
             <Routes>
-                <Route path="/" element={<Accueil />}/>
+                <Route path="/" element={<Accueil width={width} />}/>
                 <Route path="/gestion" element={<Gestion />}/>
                 <Route path={APP_ROUTES.LOGIN} element={<FormulaireLogin />}/>
                 <Route element={<RequireAuth />}>  
