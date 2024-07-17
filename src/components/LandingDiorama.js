@@ -47,31 +47,31 @@ export default function LandingDiorama({ width }) {
 
   // Interpolate positions and scales based on normalizedWidth
   const bottlePosition = [
-    lerp(-0.5, 4, normalizedWidth), // X
-    lerp(2, 0, normalizedWidth),     // Y
-    lerp(-0.5, 1, normalizedWidth)    // Z
+    lerp(-0.5, 3.9, normalizedWidth), // X
+    lerp(2, -0.1, normalizedWidth),     // Y
+    lerp(-0.5, 4, normalizedWidth)    // Z
   ];
 
   const bottleScale = [
-    lerp(1.7, 2.3, normalizedWidth),
-    lerp(1.7, 2.3, normalizedWidth),
-    lerp(1.4, 2.3, normalizedWidth)
+    lerp(1.7, 2.7, normalizedWidth),
+    lerp(1.7, 2.7, normalizedWidth),
+    lerp(1.4, 2.7, normalizedWidth)
   ];
 
   const partyPosition = [
-    lerp(-0.8, 1.8, normalizedWidth), // X
+    lerp(-0.8, 1.7, normalizedWidth), // X
     lerp(2.2, 1, normalizedWidth),   // Y
     lerp(1.2, -2, normalizedWidth)    // Z
   ];
 
   const partyScale = [
-    lerp(1, 2.2, normalizedWidth),
+    lerp(1, 2, normalizedWidth),
     lerp(1, 1.9, normalizedWidth),
     lerp(1, 1.8, normalizedWidth)
   ];
 
   return (
-    <Box position="relative" width="100%" height="100%" overflow="hidden" >
+    <Box position="relative" width="100%" height="100%" bottom="7%" overflow="hidden" >
       <Canvas style={{ position: 'absolute', top: 0, left: 0, width: '100%', height:"100%" }}>
         <OrthographicCamera
           makeDefault
@@ -81,14 +81,15 @@ export default function LandingDiorama({ width }) {
           far={100}
         />
         <ambientLight intensity={0.5} />
-        <pointLight position={[2, 1.5, -2.3]} intensity={9} />
+        <pointLight position={[1.8, 2.2, -0.5]} intensity={4} />
+        <pointLight position={[0.7, -1.3, -1.5]} intensity={4} />
         <primitive
           object={party.scene}
           position={partyPosition}
           scale={partyScale}
           rotation={[clampRotation(scrollAcceleration), -0.25, -0.1]} // Apply clamped rotation
         />
-        <pointLight position={[-1, 1.3, -1]} intensity={4} />
+        <pointLight position={[5, 1.5, 6.2]} intensity={28} />
         <primitive
           object={bottle.scene}
           position={bottlePosition}
