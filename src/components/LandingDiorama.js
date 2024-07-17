@@ -68,8 +68,8 @@ export default function LandingDiorama({ width }) {
 
   const light1Position = [
     lerp(-0.6,  1.8,  normalizedWidth), // X
-    lerp(3.0, 2.2,  normalizedWidth), // Y
-    lerp( 0.3, -0.5, normalizedWidth), // Z
+    lerp(2, 2.2,  normalizedWidth), // Y
+    lerp( -0.5, -0.5, normalizedWidth), // Z
   ];
 
   const light2Position = [
@@ -84,9 +84,9 @@ export default function LandingDiorama({ width }) {
     lerp(1.3, 6.2,normalizedWidth), // Z
   ];
 
-  const light1Intensity = lerp(2, 4, normalizedWidth);
-  const light2Intensity = lerp(2, 4, normalizedWidth);
-  const light3Intensity = lerp(16, 28, normalizedWidth);
+  const light1Intensity = lerp(1, 4, normalizedWidth);
+  const light2Intensity = lerp(1, 4, normalizedWidth);
+  const light3Intensity = lerp(14, 28, normalizedWidth);
 
   return (
     <Box position="relative" width="100%" height="100%" bottom={["3%", "3%", "7%", "7%"]} overflow="hidden">
