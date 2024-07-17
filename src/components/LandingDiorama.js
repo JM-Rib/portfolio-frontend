@@ -47,21 +47,21 @@ export default function LandingDiorama({ width }) {
 
   // Interpolate positions and scales based on normalizedWidth
   const bottlePosition = [
-    lerp(-0.5, 3.9, normalizedWidth), // X
-    lerp(2, -0.1, normalizedWidth),     // Y
+    lerp(0.2, 3.9, normalizedWidth), // X
+    lerp(1.3, -0.1, normalizedWidth),     // Y
     lerp(-0.5, 4, normalizedWidth)    // Z
   ];
 
   const bottleScale = [
-    lerp(1.7, 2.7, normalizedWidth),
-    lerp(1.7, 2.7, normalizedWidth),
-    lerp(1.4, 2.7, normalizedWidth)
+    lerp(1.3, 2.7, normalizedWidth),
+    lerp(1.3, 2.7, normalizedWidth),
+    lerp(1.0, 2.7, normalizedWidth)
   ];
 
   const partyPosition = [
-    lerp(-0.8, 1.7, normalizedWidth), // X
-    lerp(2.2, 1, normalizedWidth),   // Y
-    lerp(1.2, -2, normalizedWidth)    // Z
+    lerp(-0.7, 1.7, normalizedWidth), // X
+    lerp(1.8, 1, normalizedWidth),   // Y
+    lerp(-1.2, -2, normalizedWidth)    // Z
   ];
 
   const partyScale = [
@@ -71,7 +71,7 @@ export default function LandingDiorama({ width }) {
   ];
 
   return (
-    <Box position="relative" width="100%" height="100%" bottom="7%" overflow="hidden" >
+    <Box position="relative" width="100%" height="100%" bottom={["3%", "3%", "7%", "7%"]} overflow="hidden" >
       <Canvas style={{ position: 'absolute', top: 0, left: 0, width: '100%', height:"100%" }}>
         <OrthographicCamera
           makeDefault
