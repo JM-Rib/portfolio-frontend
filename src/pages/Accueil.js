@@ -13,7 +13,7 @@ function Accueil({width}) {
 
 	return (
     <div className="accueil">
-      <Box position="relative" width="100%" height={["70vh", "80vh", "92vh", "92vh"]} >
+      <Box position="relative" width="100%" height={["90vh", "80vh", "92vh", "92vh"]} >
         <LandingDiorama width={width} />
         <Box position="absolute" top="0" left={["7%","7%","7%","20%"]} right="0" bottom="20%" display="flex" flexDirection="column" alignItems="left" justifyContent="center" color="white" zIndex="10">
           <Heading size='md' fontFamily="title" fontSize={["4xl","5xl","6xl","7xl"]} textAlign="left">Félicitations!</Heading>
@@ -27,6 +27,8 @@ function Accueil({width}) {
             </ChakraLink>
           </Box>
         </Box>
+      </Box>
+      <Box height={500} backgroundColor="white">
       </Box>
       <ProjetCards />
     </div>
