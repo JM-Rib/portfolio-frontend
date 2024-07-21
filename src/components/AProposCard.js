@@ -30,10 +30,13 @@ function AProposCard(props) {
               alt={props.imageAlt} // Alt text for the image
               boxSize={{ base: '100%', md: '150px' }} // Adjust size for different viewports
               objectFit="cover"
-              borderRadius="md"
-              order={{ base: -1, md: 1 }} // Move image to the top in mobile view
+              borderRadius={"md"}
+              maxH={["200px", "200px", "auto", "auto"]}
+              margin={[0,0, 2, 2]}
             />
-            <CardBody>
+            <CardBody 
+              order={{ base: 1, md: 1 }} 
+            >
               <Heading textAlign="left" color="white" fontSize="lg" overflow="hidden">
                 {props.description}
               </Heading>
