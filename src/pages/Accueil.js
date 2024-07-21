@@ -9,6 +9,7 @@ import Titre from '../components/Titre';
 import { useAuth } from '../providers/AuthProvider';
 import { APP_ROUTES } from '../utils/constants';
 import { Text, Box, Heading, Container, Stack, Flex, Button, Link as ChakraLink } from '@chakra-ui/react';
+import Footer from '../components/Footer';
 
 function Accueil({width}) {
   const {logout, hasLoginData} = useAuth();
@@ -33,6 +34,7 @@ function Accueil({width}) {
       <Titre titre="A propos de moi"></Titre>
       <AProposCard description={"Etudiant en M1 Informatique, je développe de nombreuses expériences dans le web. J'aime créer des sites intuitifs"} />
       <ProjetCards />
+      <Footer />
     </div>
     );
 }
