@@ -43,19 +43,19 @@ function ProjetCards(props) {
       <br />
       <br />
       <Container maxW='2xl' bg='alpha' >
-      <Grid
-        templateColumns={{ base: '1fr', sm: '1fr 1fr', md: '1fr 1fr', lg: '1fr 1fr' }}
-        columnGap={[4,8,10]}
-        rowGap={[4,6,8]}
-        justifyContent="center"
-        alignItems="start"
-      > 
-      {getProjetsApi.data?.map((projet, n) => (
-          <GridItem maxH='md' key={n} rowSpan={2} colSpan={1} >
-            <CardProjet  title={projet.nomprojet} description={projet.description} themes={projet.themes} />
-          </GridItem>
-      ))}
-      </Grid>
+        <Grid
+          templateColumns={{ base: '1fr', sm: '1fr 1fr', md: '1fr 1fr', lg: '1fr 1fr' }}
+          columnGap={[4,8,10]}
+          rowGap={[4,6,8]}
+          justifyContent="center"
+          alignItems="start"
+        > 
+        {getProjetsApi.data?.map((projet, n) => (
+            <GridItem maxH='md' key={n} rowSpan={2} colSpan={1} >
+              <CardProjet  title={projet.nomprojet} description={projet.description} themes={projet.themes} />
+            </GridItem>
+        ))}
+        </Grid>
       </Container>
     </div>
   );

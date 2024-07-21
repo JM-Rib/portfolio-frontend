@@ -1,9 +1,11 @@
 import React from 'react';
 import Bouton from '../components/Bouton';
 import ProjetCards from '../components/ProjetCards';
+import AProposCard from '../components/AProposCard';
 import TextEmoji from '../components/TextEmoji';
 import LargeEmoji from '../components/LargeEmoji';
 import LandingDiorama from '../components/LandingDiorama';
+import Titre from '../components/Titre';
 import { useAuth } from '../providers/AuthProvider';
 import { APP_ROUTES } from '../utils/constants';
 import { Text, Box, Heading, Container, Stack, Flex, Button, Link as ChakraLink } from '@chakra-ui/react';
@@ -28,8 +30,8 @@ function Accueil({width}) {
           </Box>
         </Box>
       </Box>
-      <Box height={500} backgroundColor="white">
-      </Box>
+      <Titre titre="A propos de moi"></Titre>
+      <AProposCard description={"Etudiant en M1 Informatique, je développe de nombreuses expériences dans le web. J'aime créer des sites intuitifs"} />
       <ProjetCards />
     </div>
     );
