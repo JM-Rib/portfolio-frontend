@@ -32,7 +32,7 @@ function Accueil({width}) {
         </Box>
       </Box>
       <Titre titre="A propos de moi"></Titre>
-      <AProposCard description={"Etudiant en M1 Informatique, je développe de nombreuses expériences dans le web. J'aime créer des sites intuitifs"} />
+      <AProposCard description={"Etudiant en M1 Informatique, je développe de nombreuses expériences dans le web. J'aime créer des sites intuitifs. Etudiant en M1 Informatique, je développe de nombreuses expériences dans le web. J'aime créer des sites intuitifs Etudiant en M1 Informatique, je développe de nombreuses expériences dans le web. J'aime créer des sites intuitifsEtudiant en M1 Informatique, je développe de nombreuses expériences dans le web. J'aime créer des sites intuitifs"} />
       <ProjetCards />
       <Footer />
     </div>
