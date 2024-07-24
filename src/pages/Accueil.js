@@ -23,7 +23,7 @@ function Accueil({width}) {
           <Heading size='md' fontFamily="title" fontSize={["4xl","5xl","6xl","7xl"]} textAlign="left">Vous êtes arrivé sur mon site!</Heading>
           <Heading size='md' mt="4" fontFamily="heading" fontSize={["md","xl","2xl","2xl"]} textAlign="left">Explorez mon portfolio d'Expériences Numériques</Heading>
           <Box display="flex" mt="4" fontSize={["sm","sm","md","xl"]} alignItems="left">
-            <ChakraLink href="/inscription" _hover={{ textDecoration: 'none' }}>
+            <ChakraLink href="/projects" _hover={{ textDecoration: 'none' }}>
               <Button colorScheme="purple" >
                 Consulter
               </Button>
