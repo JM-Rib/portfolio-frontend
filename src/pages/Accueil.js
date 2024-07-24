@@ -32,8 +32,12 @@ function Accueil({width}) {
         </Box>
       </Box>
       <Titre titre="A propos de moi"></Titre>
-      <AProposCard description={"Etudiant de M1 Informatique, je développe de nombreuses expériences dans le web. J'aime créer des sites intuitifs et ludiques à travers de la 3D, de la vidéo ou du son. En m'appuyant sur ces éléments je crée des expériences immersives sur mesure. Je porte un oeil tout particulier au design de ces plateformes pour faciliter leur prise en main. J'aime également suivre l'actualité informatique et rester informé des dernières tendances et innovations du secteur."} />
+      <Box mb={[4,4,0,0]}></Box>
+      <AProposCard description={"Étudiant de M1 Informatique, je développe de nombreuses expériences dans le web. J'aime créer des sites intuitifs et ludiques à travers de la 3D, de la vidéo ou du son. En m'appuyant sur ces éléments, je crée des expériences immersives sur mesure. Je porte un œil tout particulier au design de ces plateformes pour faciliter leur prise en main. J'aime également suivre l'actualité informatique et rester informé des dernières tendances et innovations du secteur."} />
+      <Box mb="150"></Box>
+      <Titre titre="Mes projets"></Titre>
       <ProjetCards />
+      <Box mb="175"></Box>
       <Footer />
     </div>
     );
