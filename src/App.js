@@ -28,6 +28,7 @@ import GestionContenutheme from "./components/GestionContenutheme"
 import GestionNomarticle from "./components/GestionNomarticle"
 import NavBar from "./components/Navbar/NavBar"
 import Accueil from './pages/Accueil';
+import Projets from './pages/Projets';
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
             <NavBar />
             <Routes>
                 <Route path="/" element={<Accueil width={width} />}/>
+                <Route path="/projects" element={<Projets />}/>
                 <Route path="/gestion" element={<Gestion />}/>
                 <Route path={APP_ROUTES.LOGIN} element={<FormulaireLogin />}/>
                 <Route element={<RequireAuth />}>  
