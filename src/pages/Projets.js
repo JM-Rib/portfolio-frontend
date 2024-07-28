@@ -11,12 +11,12 @@ import { APP_ROUTES } from '../utils/constants';
 import { Text, Box, Heading, Container, Stack, Flex, Button, Link as ChakraLink } from '@chakra-ui/react';
 import Footer from '../components/Footer';
 
-function Projets({width}) {
+function Projets(props) {
   const {logout, hasLoginData} = useAuth();
 
 	return (
     <div className="accueil">
-      <Titre titre="Mes projets"></Titre>
+      <Titre>Mes projets</Titre>
       <Box mb="6vh"></Box>
       <ProjetCards />
       <Box mb="24vh"></Box>

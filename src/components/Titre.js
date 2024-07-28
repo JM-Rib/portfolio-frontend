@@ -1,12 +1,11 @@
 import React from 'react';
 import { Heading, Flex } from '@chakra-ui/react';
 
-function Titre(props) {
-
+function Titre({ children }) {
   return (
-    <Flex alignItems="center" justifyContent="center" >
+    <Flex alignItems="center" justifyContent="center">
       <Heading mb="4">
-        {props.titre}         
+        {children}         
       </Heading>
     </Flex> 
   );

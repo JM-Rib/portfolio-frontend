@@ -29,6 +29,7 @@ import GestionNomarticle from "./components/GestionNomarticle"
 import NavBar from "./components/Navbar/NavBar"
 import Accueil from './pages/Accueil';
 import Projets from './pages/Projets';
+import Projet from './pages/Projet';
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Accueil width={width} />}/>
                 <Route path="/projects" element={<Projets />}/>
+                <Route path="/projects/:id" element={<Projet />}/>
                 <Route path="/gestion" element={<Gestion />}/>
                 <Route path={APP_ROUTES.LOGIN} element={<FormulaireLogin />}/>
                 <Route element={<RequireAuth />}>  

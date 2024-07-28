@@ -16,26 +16,12 @@ import projetApi from '../api/projet'; //Import the API service function
 
 const ROW_AJOUT = 1;
 function ProjetCards(props) {
-  const [editMode, setEditMode] = useState([]);
-
   const getProjetsApi = useApi(projetApi.getProjets);
 
   useEffect(() => { // fetch des données 
     getProjetsApi.request();
     // eslint-disable-next-line
   }, []);
-
-  useEffect(() => { // intialisation des valeurs d'état pour l'interface
-    if (!getProjetsApi.loading && getProjetsApi.data) {
-      var tabEditMode = new Array(getProjetsApi.data.length + ROW_AJOUT).fill(false);
-      setEditMode(tabEditMode);
-    }
-    // eslint-disable-next-line
-  }, [getProjetsApi.data]);
-
-  const gridArgs = {
-
-  }
 
   return (
     <div className="EspaceProjetCards">
