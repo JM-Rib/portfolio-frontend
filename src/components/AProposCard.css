@@ -1,6 +1,4 @@
 .circular-image-text-wrap { /* Besoin d'utiliser un fichier css au lieu de chakra ui pcq les 2 dernières lignes de css sont pas dans la lib*/
-  height:90px;
-  width:110px;
   float: left;
   margin-right:3rem; 
   border-radius: 100%;

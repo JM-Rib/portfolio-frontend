@@ -1,10 +1,10 @@
 import React from 'react';
 import { Heading, Flex } from '@chakra-ui/react';
 
-function Titre({ children }) {
+function Titre({ fontSize, children }) {
   return (
     <Flex alignItems="center" justifyContent="center">
-      <Heading mb="4">
+      <Heading mb="4" fontSize={fontSize}>
         {children}         
       </Heading>
     </Flex> 

@@ -33,7 +33,9 @@ function Accueil({width}) {
       </Box>
       <Titre>A propos de moi</Titre>
       <Box mb={[4,4,0,0]}></Box>
-      <AProposCard description={"Étudiant de M1 Informatique, je développe de nombreuses expériences dans le web. J'aime créer des sites intuitifs et ludiques à travers de la 3D, de la vidéo ou du son. En m'appuyant sur ces éléments, je crée des expériences immersives sur mesure. Je porte un œil tout particulier au design de ces plateformes pour faciliter leur prise en main. J'aime également suivre l'actualité informatique et rester informé des dernières tendances et innovations du secteur."} />
+      <AProposCard description={"Étudiant de M1 Informatique, je développe de nombreuses expériences dans le web. J'aime créer des sites intuitifs et ludiques à travers de la 3D, de la vidéo ou du son. "} />
+      <Box mb="150"></Box>
+      En m'appuyant sur ces éléments, je crée des expériences immersives sur mesure. Je porte un œil tout particulier au design de ces plateformes pour faciliter leur prise en main. J'aime également suivre l'actualité informatique et rester informé des dernières tendances et innovations du secteur.
       <Box mb="150"></Box>
       <Titre>Mes projets</Titre>
       <ProjetCards />

@@ -4,7 +4,7 @@ import { Card, CardBody, Heading, Box, Container, Image, Text } from '@chakra-ui
 
 function AProposCard(props) {
   return (
-    <Container maxW='4xl' bg='alpha'>
+    <Container maxW='3xl' bg='alpha'>
       <Box
         borderRadius="md"
         _hover={{
@@ -19,7 +19,7 @@ function AProposCard(props) {
           variant='outline'
           bg="linear-gradient(90deg, rgba(150,30,255,1) 0%, rgba(150,30,255,0.8) 50%, rgba(150,30,255,0.6) 100%)"
         >
-          <CardBody fontFamily="body" color="white" fontSize="lg" overflow="hidden" textWrap="auto" textAlign="left" textIndent="0.5em" whiteSpace="pre-line" >
+          <CardBody pb="4" fontFamily="body" color="white" fontSize="lg" overflow="hidden" textWrap="auto" textAlign="left" textIndent="0.5em" whiteSpace="pre-line" >
             <Image
               src={"photo.png"}
               alt={props.imageAlt}
@@ -32,6 +32,8 @@ function AProposCard(props) {
             />
             <Box
               className="circular-image-text-wrap"
+              boxSize={["95", "95", "75", "75"]}
+              mr={["67", "67", "100", "100"]}
             />
             {props.description}
           </CardBody>

@@ -4,7 +4,7 @@ import Titre from '../components/Titre';
 import Footer from '../components/Footer';
 import useApi from '../hooks/useApi';
 import projetApi from '../api/projet'; // Import the API service function
-import { Box } from '@chakra-ui/react';
+import { Box, Image } from '@chakra-ui/react';
 
 function Projet(props) {
   const { id } = useParams();
@@ -18,12 +18,21 @@ function Projet(props) {
   return (
     <div className="projet">
         {console.log(getProjetApi.data)}
-        <Titre>
+        <Image
+          h="18vh"
+          w="100%"
+          objectFit="cover"
+          src='../cardcover.png'
+          alt={props.title}
+          filter="auto"
+        />
+        <Box mb="3vh"></Box>
+        <Titre fontSize={90}>
           {getProjetApi.data?.nomprojet}
         </Titre>
-        <Box mb="6vh"></Box>
+        <Box mt="6vh" mb="24vh">
           {getProjetApi.data?.description}
-        <Box mb="24vh"></Box>
+        </Box>
       <Footer />
     </div>
   );
